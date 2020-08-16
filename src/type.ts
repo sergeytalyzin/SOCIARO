@@ -1,43 +1,43 @@
 export interface PropertyWeatherCIty  {
-  coord?: {
-    lon?: any,
-    lat?: any
+  coord: {
+    lon: number,
+    lat: number
   },
-  weather?: [
+  weather: [
     {
-      id?: any,
-      main?: any,
-      description?: any,
-      icon?: string
+      id: number,
+      main: string,
+      description: string,
+      icon: string
     }
   ],
-  base?: any,
-  main?: {
-    temp?: any,
-    feels_like?: any,
-    temp_min?: any,
-    temp_max?: any,
-    pressure?: any,
-    humidity?: any
+  base: string,
+  main: {
+    temp: number,
+    feels_like: number,
+    temp_min: number,
+    temp_max: number,
+    pressure: number,
+    humidity: number
   },
-  wind?: {
-    speed?: any,
-    deg?: any
+  wind: {
+    speed: number,
+    deg: number
   },
-  clouds?: {
-    all?: any
+  clouds: {
+    all: number
   },
-  dt?: any,
-  sys?: {
-    type?: any,
-    id?: any,
-    message?: any,
-    country?: any,
-    sunrise?: any
-    sunset?: any
+  dt: number,
+  sys: {
+    type: number,
+    id: number,
+    message: number,
+    country: string,
+    sunrise: number
+    sunset: number
   },
-  timezone?: any,
-  id?: any,
-  name?: any,
-  cod?: any
+  timezone: number,
+  id: number,
+  name: string,
+  cod: number
 }
