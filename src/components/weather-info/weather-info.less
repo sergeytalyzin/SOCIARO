@@ -1,0 +1,130 @@
+@import "../variables-less/variables.less";
+
+.weather-info {
+  width: 371px;
+  min-height: 850px;
+  margin: 0 auto;
+  padding-top: 260px;
+  background-image:url("../../img/graphic.png");
+  background-repeat: no-repeat;
+  background-size: auto 300px;
+
+}
+.weather-info__property {
+  padding-top: 40px;
+  background: #FFFFFF;
+  box-shadow: 0px -16px 40px rgba(0, 0, 0, 0.2);
+  border-radius: 15px 15px 0 0;
+}
+.weather-info__container {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  font-size: 16px;
+}
+
+.weather-info__container--back {
+  position: absolute;
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  padding: 2px 10px;
+  margin: 10px 20px;
+  top: -45px;
+  left: 129px;
+  font-size: 12px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #FFFFFF 5.67%, #54B4F9 127%);
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: white;
+  transition: .15s ease-in-out;
+}
+.weather-info__container--back:hover {
+  box-shadow: 0 0 10px 0 #F137A6 inset, 0 0 10px 4px #F137A6;
+  color: #F137A6;
+}
+
+.info {
+  margin-top: 20px;
+  margin-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.info__item {
+  position: relative;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 95px;
+  font-size: 14px;
+  height: 101px;
+  margin-left: 10px;
+  background: #FFFFFF;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.5s;
+  &--span {
+    display: block;
+    margin-top: 40px;
+  }
+  &--text {
+    margin: 0;
+    padding: 0;
+
+  }
+}
+.max-temp {
+  display: block;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+.info__item--property p {
+  font-weight: 500;
+  font-size: 8px;
+  color: #999999;
+}
+.info__item--span-temp {
+  margin-top: 10px;
+  margin-left: 5px;
+  font-size: 50px;
+}
+
+.info__item:focus,
+.info__item:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+}
+.info__item--property::before {
+  position: absolute;
+  content: '';
+  top: 7px;
+  left: 36px;
+  width: 24px;
+  height: 24px;
+}
+
+.humidity::before {
+  background-image:url("../../img/humidity.png");
+  background-repeat: no-repeat;
+}
+.pressure::before {
+  background-image:url("../../img/barometer.png");
+  background-repeat: no-repeat;
+}
+.speed::before {
+  background-image:url("../../img/wind.png");
+  background-repeat: no-repeat;
+}
+.sunrise::before {
+  background-image:url("../../img/sunrise.png");
+  background-repeat: no-repeat;
+}
+.sunset::before {
+  background-image:url("../../img/sunset.png");
+  background-repeat: no-repeat;
+}
+.dayTime::before {
+  background-image:url("../../img/sand-clock.png");
+  background-repeat: no-repeat;
+}
+
